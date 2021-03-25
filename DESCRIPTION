@@ -1,0 +1,23 @@
+Package: ggsano
+Title: Provide Colours in Sciensano Theme
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Robby",
+           family = "De Pauw",
+           role = c("aut", "cre"),
+           email = "robby.depauw@sciensano.be",
+           comment = c(ORCID = "0000-0002-4242-9062"))
+Description: This package will provide colours in the Sciensano theme.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports:
+    ggplot2,
+    dplyr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
