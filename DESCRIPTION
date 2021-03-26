@@ -7,9 +7,10 @@ Authors@R:
            role = c("aut", "cre"),
            email = "robby.depauw@sciensano.be",
            comment = c(ORCID = "0000-0002-4242-9062"))
-Description: This package will provide colours in the Sciensano theme.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+Description: An implementation of the grammar of graphics for Sciensano in R. 
+    It includes the official Sciensano colors, and implement Sciensano templates, 
+    and logos.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
