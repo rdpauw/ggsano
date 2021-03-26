@@ -13,10 +13,13 @@ scale_colour_sciensano(alpha = 1, ...)
 scale_fill_sciensano(alpha = 1, ...)
 }
 \arguments{
+\item{alpha}{Transparency level, a real number in (0, 1].
+See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
+
 \item{...}{additional parameters for \code{\link[ggplot2]{discrete_scale}}}
 }
 \description{
-See \code{\link{pal_scien_d}} for details.
+See \code{\link{pal_sciensano}} for details.
 }
 \examples{
 library("ggplot2")

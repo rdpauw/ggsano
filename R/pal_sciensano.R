@@ -29,9 +29,9 @@ pal_sciensano <- function (alpha = 1)
 
 #' Sciensano Color Scales
 #'
-#' See \code{\link{pal_scien_d}} for details.
+#' See \code{\link{pal_sciensano}} for details.
 #'
-#' @inheritParams pal_scien_d
+#' @inheritParams pal_sciensano
 #' @param ... additional parameters for \code{\link[ggplot2]{discrete_scale}}
 #'
 #' @export scale_color_sciensano
