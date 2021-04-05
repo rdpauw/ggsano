@@ -3,6 +3,7 @@
 #'
 #' @param alpha Transparency level, a real number in (0, 1].
 #' See \code{alpha} in \code{\link[grDevices]{rgb}} for details.
+#' @param name Name of the Sciensano palette to use (all, green, blue, yellow)
 #'
 #' @export pal_sciensano
 #'
@@ -15,7 +16,7 @@
 #' library("scales")
 #' show_col(pal_sciensano()(12))
 #' show_col(pal_sciensano(alpha = 0.6)(12))
-pal_sciensano <- function (name = "all", alpha = 1)
+pal_sciensano <- function (alpha = 1, name = "all")
 {
   if (alpha > 1L | alpha <= 0L)
     stop("alpha must be in (0, 1]")
