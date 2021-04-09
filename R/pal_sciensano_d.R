@@ -16,15 +16,17 @@
 #' library("scales")
 #' show_col(pal_sciensano()(12))
 #' show_col(pal_sciensano(alpha = 0.6)(12))
-pal_sciensano <- function (alpha = 1, name = "all")
-{
-  if (alpha > 1L | alpha <= 0L)
+pal_sciensano <- function(alpha = 1, name = "all") {
+  if (alpha > 1L | alpha <= 0L) {
     stop("alpha must be in (0, 1]")
-  raw_cols = unlist(x[name])
-  raw_cols_rgb = col2rgb(raw_cols)
-  alpha_cols = rgb(raw_cols_rgb[1L, ], raw_cols_rgb[2L, ],
-                   raw_cols_rgb[3L, ], alpha = alpha * 255L, names = names(raw_cols),
-                   maxColorValue = 255L)
+  }
+  raw_cols <- unlist(x[name])
+  raw_cols_rgb <- col2rgb(raw_cols)
+  alpha_cols <- rgb(raw_cols_rgb[1L, ], raw_cols_rgb[2L, ],
+    raw_cols_rgb[3L, ],
+    alpha = alpha * 255L, names = names(raw_cols),
+    maxColorValue = 255L
+  )
   manual_pal(unname(alpha_cols))
 }
 
@@ -53,14 +55,16 @@ pal_sciensano <- function (alpha = 1, name = "all")
 #' ) +
 #'   geom_point(alpha = 0.7) +
 #'   geom_smooth(method = "loess", alpha = 0.1, size = 1, span = 1) +
-#'   theme_bw() + scale_color_sciensano()
+#'   theme_bw() +
+#'   scale_color_sciensano()
 #'
 #' ggplot(
 #'   subset(diamonds, carat > 2.2 & depth > 55 & depth < 70),
 #'   aes(x = depth, fill = cut)
 #' ) +
 #'   geom_histogram(colour = "black", binwidth = 1, position = "dodge") +
-#'   theme_bw() + scale_color_sciensano()
+#'   theme_bw() +
+#'   scale_color_sciensano()
 scale_color_sciensano <- function(alpha = 1, name = "all", ...) {
   discrete_scale("colour", "sciensano", pal_sciensano(alpha, name), ...)
 }
