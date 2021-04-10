@@ -39,7 +39,7 @@ You can specify the colours in each row by specifying the `name`
 argument in the functions
 
 ``` r
-show_col(pal_sciensano(name = "yellow")(4))
+show_col(pal_sciensano(name = "yellowaccent")(4))
 ```
 
 <img src="man/figures/README-cars-1.png" width="100%" />

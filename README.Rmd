@@ -42,5 +42,5 @@ show_col(pal_sciensano()(12))
 You can specify the colours in each row by specifying the `name` argument in the functions
 
 ```{r cars}
-show_col(pal_sciensano(name = "yellow")(4))
+show_col(pal_sciensano(name = "yellowaccent")(4))
 ```
