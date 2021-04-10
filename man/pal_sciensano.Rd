@@ -10,7 +10,8 @@ pal_sciensano(alpha = 1, name = "all")
 \item{alpha}{Transparency level, a real number in (0, 1].
 See \code{alpha} in \code{\link[grDevices]{rgb}} for details.}
 
-\item{name}{Name of the Sciensano palette to use (all, green, blue, yellow)}
+\item{name}{Name of the Sciensano palette to use. Please choose between
+"all", "primary", "secondary", or "yellowaccent". Default is set to "all".}
 }
 \description{
 Sciensano Color Palettes

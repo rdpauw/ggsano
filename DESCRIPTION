@@ -8,7 +8,7 @@ Authors@R:
            email = "robby.depauw@sciensano.be",
            comment = c(ORCID = "0000-0002-4242-9062"))
 Description: An implementation of the grammar of graphics for Sciensano in R. 
-    It includes the official Sciensano colors, and implement Sciensano templates, 
+    The package includes the official Sciensano colors, and implements Sciensano templates, 
     and logos.
 License: MIT + file LICENSE
 Encoding: UTF-8
